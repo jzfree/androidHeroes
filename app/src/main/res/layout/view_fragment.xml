@@ -11,4 +11,13 @@
         android:layout_margin="16dp">
 
     </com.jiu.androidheroes.RoundCornerImageView>
+
+    <com.jiu.androidheroes.views.RectTextView
+        android:id="@+id/rect_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/rect_text_view">
+
+    </com.jiu.androidheroes.views.RectTextView>
 </LinearLayout>
