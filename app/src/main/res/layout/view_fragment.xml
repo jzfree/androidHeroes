@@ -12,16 +12,18 @@
     <com.jiu.androidheroes.RoundCornerImageView
         android:id="@+id/image"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </com.jiu.androidheroes.RoundCornerImageView>
+        android:layout_height="wrap_content" />
 
     <com.jiu.androidheroes.views.RectTextView
         android:id="@+id/rect_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rect_text_view"
-        androidheroes:fontName="pipe_dream.ttf">
+        androidheroes:fontName="pipe_dream.ttf" />
 
-    </com.jiu.androidheroes.views.RectTextView>
+    <com.jiu.androidheroes.views.BlinkTextView
+        android:id="@+id/blink_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blink_text_view" />
 </LinearLayout>
