@@ -8,14 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by jiu on 15/10/20.
+ * Created by jiu on 15/12/11.
  */
-public class ViewFragment extends Fragment {
-    public static ViewFragment instance;
+public class ScrollFragment extends Fragment {
+    public static ScrollFragment instance;
 
-    public static ViewFragment newInstance() {
+    public static ScrollFragment newInstance() {
         if (instance == null) {
-            instance = new ViewFragment();
+            instance = new ScrollFragment();
         }
         return instance;
     }
@@ -27,7 +27,7 @@ public class ViewFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View contentView = inflater.inflate(R.layout.view_fragment, container, false);
+        View contentView = inflater.inflate(R.layout.scroll_fragment, container, false);
         initViews(contentView);
         return contentView;
     }
@@ -35,10 +35,9 @@ public class ViewFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        ((MainActivity) activity).onSectionAttached(getString(R.string.title_section3));
+        ((MainActivity) activity).onSectionAttached(getString(R.string.title_section2));
     }
 
     private void initViews(View view) {
-
     }
 }
